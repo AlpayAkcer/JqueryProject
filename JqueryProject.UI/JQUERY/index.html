@@ -9,49 +9,12 @@
         //p taglarımın her birini tıkladığımda alttaki kod çalışacak ve div içerisindeki p paragrafları tek tek yok olacak.
 
         $(document).ready(function () {
-            $("p").click(function () {
-                $(this).hide();
-                alert("p tıklandı");
-            });
-            $("#pid").click(function () {
-                $(this).hide();
-                alert("pid tıklandı");
-            });
-            $(".result").click(function () {
-                $(this).hide();
-                alert("class result tıklandı");
-            });
+            $("button").click(function () {
+                //Css manipülasyonu ile tr:even tablodaki çift sayıların background renklerini değiştiriyoruz
+                $("tr:even").css("background-color", "red");
 
-            //$("button").click(function () {
-            //    $(".test").hide();
-            //    alert("button tıklandı");
-            //});
-            $("#btnGizle").click(function () {
-                $("*").hide();
-                alert("Tümünü Kapat tıklandı");
-            });
-            $("#btnGizle").click(function () {
-                $("*").hide();
-                alert("Tümünü Kapat tıklandı");
-            });
-            $("#btnSecili").click(function () {
-                $("p #pid").hide();
-                alert("Tümünü Kapat tıklandı");
-            });
-
-            //UnderList uygulamaları
-            //$("#btnUl").click(function () {
-            //    $("ul li:first-child").hide();
-            //});
-
-            //Attributelere ulaşmak için
-            //$("#btnUl").click(function () {
-            //    $("[href]").hide();
-            //});
-
-            //Attributelere ulaşmak için
-            $("#btnUl").click(function () {
-                $("a[target='_blank']").hide();
+                //Css manipülasyonu ile tr:odd tablodaki TEK sayıların background renklerini değiştiriyoruz
+                $("tr:odd").css("background-color", "yellow");
             });
         });
     </script>
@@ -59,34 +22,43 @@
 <body>
     <div class="container">
         <div class="form-group">
-            <h2 class="test">
-                Parağraflar</h2class="test">
-                <p>Deneme Paragrah</>
-                <p id="pid">Deneme Paragrah 1</p>
-                <span class="result">Deneme Paragrah :)</span>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Click Me</button>
-            <button type="submit" id="btnGizle" class="btn btn-primary">Tümünü Kapat</button>
-            <button type="submit" id="btnSecili" class="btn btn-primary">Tümünü Kapat</button>
-        </div>
-    </div>
-    <div class="container">
-        <div class="form-group">
             <p>List 1</p>
-            <ul>
-                <li>Javascript</li>
-                <li>MVC</li>
-                <li>.NET Core</li>
-            </ul>
-            <p>List 2</p>
-            <ul>
-                <li><a href="#">PostgreSql</a></li>
-                <li><a href="#" target="_blank">MySQL</a></li>
-                <li>MSSQL</li>
-            </ul>
+            <table class="table table-bordered" border="1px">
+                <thead>
+                    <tr>
+                        <th>Software</th>
+                        <th>Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Javascript</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>MVC</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>.NET Core</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">PostgreSql</a></td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" target="_blank">MySQL</a></td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>MSSQL</td>
+                        <td>English</td>
+                    </tr>
+                </tbody>
+            </table>
             <strong>
-                <button id="btnUl" class="btn btn-danger">Tıkla</button>
+                <button class="btn btn-danger">Tıkla</button>
             </strong>
         </div>
     </div>
