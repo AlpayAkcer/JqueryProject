@@ -26,3 +26,24 @@ Sayfa yüklenmeden önce yazılacak olan kod (head taglarının içerisinde olma
 			/// kodlarımızın geleceği kısım olmalı
 		});
 		</script>
+
+
+		$(this).hide() - geçerli olanı gizle
+		$("p").hide() - tüm <p> elementlerini gizle
+		$(".result).hide() - tüm result clasına sahip olanları gizle
+		$("#result").hide() - resultID değerine sahip olanı gizle
+
+		adları, id'leri, class, attribute, bulmak veya seçmek içim selector kullanırız
+
+		# Jquery selector(seçici, seçilen, seçilmesini istediğimiz)
+		jquery'deki bütün seçiciler $ ile başlar (); devamında parantez ile devama eder ve parantez ile kapanır.
+
+		ÖRNEK:
+		$(document).ready(function()
+		{
+			/// kodlarımızın geleceği kısım olmalı
+		});
+
+		# Tüm elementleri seçmek için body'den başlayarak body'nin bittiği alana kadar olan kısımdaki her şey.
+
+		$("*").hide(); * işareti eklenirse, o zaman hepsi seçilir (Herşey)
