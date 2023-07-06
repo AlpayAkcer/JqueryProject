@@ -3,21 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <script src="js/jquery-3.7.0.min.js"></script>
-    <script>
-        //jquer ile daha hızlı ve az kod ile nasıl yazıldığını ve mantığını anlamış oluyoruz
-        //p taglarımın her birini tıkladığımda alttaki kod çalışacak ve div içerisindeki p paragrafları tek tek yok olacak.
-
-        $(document).ready(function () {
-            $("button").click(function () {
-                //Css manipülasyonu ile tr:even tablodaki çift sayıların background renklerini değiştiriyoruz
-                $("tr:even").css("background-color", "red");
-
-                //Css manipülasyonu ile tr:odd tablodaki TEK sayıların background renklerini değiştiriyoruz
-                $("tr:odd").css("background-color", "yellow");
-            });
-        });
-    </script>
+    <script src="js/jquery-3.7.0.min.js"></script>    
 </head>
 <body>
     <div class="container">
@@ -62,5 +48,20 @@
             </strong>
         </div>
     </div>
+
+    <script>
+        //jquer ile daha hızlı ve az kod ile nasıl yazıldığını ve mantığını anlamış oluyoruz
+        //p taglarımın her birini tıkladığımda alttaki kod çalışacak ve div içerisindeki p paragrafları tek tek yok olacak.
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                //Css manipülasyonu ile tr:even tablodaki çift sayıların background renklerini değiştiriyoruz
+                $("tr:even").css("background-color", "red");
+
+                //Css manipülasyonu ile tr:odd tablodaki TEK sayıların background renklerini değiştiriyoruz
+                $("tr:odd").css("background-color", "yellow");
+            });
+        });
+    </script>
 </body>
 </html>
