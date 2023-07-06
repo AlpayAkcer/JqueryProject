@@ -1,0 +1,28 @@
+﻿Jquery kullanımı hakkında bilgilendirme
+
+- Element
+- Event
+- Function
+- Document/ready
+- Show Hide
+- Property
+- Fade
+- Slide
+- Stop,Callback
+- Each,End,Has,is,OffsetParent,slice
+- prop,grep,merge,get script,trim
+- when, then
+- User interface
+- AJAX
+- DOM
+
+
+Jquery Sytax
+Sayfa yüklenmeden önce yazılacak olan kod (head taglarının içerisinde olmalı. ÖRN:)
+
+	<script>
+		$(document).ready(function()
+		{
+			/// kodlarımızın geleceği kısım olmalı
+		});
+		</script>
