@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <h2>Jquery Event Devam</h2>
+    <p>Normal Paragraf</p>
+    <p>Pencerenin Boyutu <span>0</span> kez değiştirildi.</p>
+    <p>EN <span id="width">0</span></p>
+    <p>BOY <span id="height">0</span></p>
+    <input type="text" value="Helle Jquery" /><br /><br />
+    <button type="submit" id="btnButton">Click Button</button>
+    <a href="#" id="btnLink">Click Link</a>
+
+    <script>
+        /*$(function () {*/
+
+        //var objPerson = {
+        //    name: "Alpay Akçer",
+        //    age: 42,
+        //    test: function () {
+        //        $("p").text("İsim: " + this.name + '<br>' + "Yaş: " + this.age);
+        //    }
+        //};
+        //$("#btnButton").click($.proxy(objPerson, "test"));
+
+
+        //Resize event kullanımı
+
+        //var x = 0;
+        //$(function () {
+
+        //    $(window).resize(function () {
+        //        $("span").text(x += 1);
+        //    });
+
+        //});
+
+        //var x = 0;
+        //var w, h;
+        //w = $(window).width();
+        //h = $(window).height();
+        //$("#width").text(w);
+        //$("#height").text(h);
+
+        //$(window).resize(function () {
+        //    $("span").text(x += 1);
+        //    w = $(window).width();
+        //    h = $(window).height();
+        //    $("#width").text(w);
+        //    $("#height").text(h);
+        //});
+
+
+
+        $(function () {
+            $("p").each(function (i) {
+                $(this).on("click", { x: i }, function (event) {
+                    alert($(this).index() + " .paragraf +" + event.data.x + " veri");
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

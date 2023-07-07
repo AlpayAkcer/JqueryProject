@@ -32,6 +32,9 @@
                 <span>0</span>
             </p>
         </div>
+        <div class="form-group" id="result">
+            Change Yaptın
+        </div>
     </div>
 
     <script>
@@ -109,10 +112,19 @@
             //    }
             //});
 
-            var i = 0;
-            $("p").on({
-                
+            $("#username").change(function () {
+                $("#result").css("color", "red");
             });
+            $("#username").select(function () {
+                $("#result").text("Beni neden seçtin");
+            });
+
+            //$("p").one("click", function () {
+            //    alert("Ben tek bir kez çalışırım");
+            //});
+            //$("p").on("click", function () {
+            //    $(this).animate({ fontSize: "+=6px" });
+            //});
         });
     </script>
 </body>

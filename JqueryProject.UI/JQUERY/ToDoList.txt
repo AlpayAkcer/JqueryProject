@@ -14,7 +14,7 @@
 - when, then
 - User interface
 - AJAX
-- DOM
+- DOM (Document Object Model) Web sitesinde bulunan tüm elemanlara nesne gibi görmesidir. (resim, yazı, vs nesnedir.)
 
 
 Jquery Sytax
@@ -160,3 +160,5 @@ Sayfa yüklenmeden önce yazılacak olan kod (head taglarının içerisinde olma
             //$("input").keypress(function () {
             //    $("span").text(i += 1); //bir inputa deger yazdırmak için text kullanılır.
             //});
+
+
