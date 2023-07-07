@@ -60,3 +60,103 @@ Sayfa yüklenmeden önce yazılacak olan kod (head taglarının içerisinde olma
             });
         });
 
+
+		//Eventler
+			Mouse Event
+				- click
+				- dbclick
+				- mouseenter
+				- mouseleave
+
+			Keyboard Event
+				- Keypress
+				- Keydown
+				- Keyup
+
+			Form Event
+				- submit
+				- change
+				- focus
+				- blur
+
+			Document/Windows Event
+				- load
+				- resize
+				- scroll
+				- unload
+
+
+			Birden fazla event kullanmak
+
+			//Paragfta birden fazla event atamak için kullanılır.
+            //var i = 0;
+            //$("p").on({
+            //    mouseenter: function () {
+            //        $(this).css("background-color", "red");
+            //    },
+            //    mouseleave: function () {
+            //        $(this).css("background-color", "yellow");
+            //    },
+            //    click: function () {
+            //        $(this).css("background-color", "blue");
+            //    }
+            //});
+
+			//$("p").dblclick(function () {
+            //    $("h2").hide();
+            //}); //doubleclick event
+
+            //$("p").click(function () {
+            //    $(this).hide();
+            //}); //click event
+
+            //$("p").mouseenter(function () {
+            //    alert("Paragrafın alanına girdim");
+            //}); //mouseenter event
+
+            //$("p").mouseleave(function () {
+            //    alert("Paragrafın alanından çıktım");
+            //}); //mouseleave event
+
+            //$("p").mousedown(function () {
+            //    alert("Paragrafa tıkladığımızda çalışır");
+            //}); //mousedown event
+
+            //$("p").mouseup(function () {
+            //    alert("Mousedan elimi çektiğim zaman çalışır");
+            //}); //mouseup event
+
+            //$("p").hover(function () {
+            //    alert("Paragrafın alanına girdiğim zaman çalışır");
+            //}, function () {
+            //    alert("Paragraftan çıktığım zaman çalışır");
+            //}); //mouseup hover -
+
+            //FOCUS
+            //$("input").focus(function () {
+            //    $(this).css("background-color", "#cccccc");
+            //});
+            ////Odaklanma bittiğinde blur eventi çalışıyor
+            //$("input").blur(function () {
+            //    $(this).css("background-color", "red");
+            //});
+
+            //$("input").keydown(function () {
+            //    $("input").css("background-color", "pink");
+            //});
+            //$("input").keydown(function () {
+            //    $(this).css("background-color", "pink");
+            //});
+            //Odaklanma bittiğinde blur eventi çalışıyor
+            //$("input").keyup(function () {
+            //    $(this).css("background-color", "blue");
+            //});
+            //$("input").keyup(function () {
+            //    $("input").css("background-color", "blue");
+            //});
+
+            //KEYPRESS
+            //var i = 0;
+            //$("input").keypress(function () {
+            //    $("span").text(i += 1); //bir inputa deger yazdırmak için text kullanılır.
+            //});
