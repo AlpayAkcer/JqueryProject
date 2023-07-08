@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h2>Jquery Callback, stop, animation</h2>
+    <button type="button" id="stop" class="btn btn-danger">Stop</button>
+    <button type="button" class="btn btn-danger">Butona Tıkla</button>
+    <div id="divClick">Click</div>
+    <div id="panel">Hello panel jquery</div>
+    <br />
+    <div id="panel1"><h3>Hello panel jquery</h3></div>
+
+    <script>
+
+        $(function () {
+            $("#divClick").click(function () {
+                $("#panel1").slideDown(4000);
+            });
+            //$("#stop").click(function () {
+            //    $("#panel").stop();
+            //});
+
+            $("button").click(function () {
+                $("#panel1").hide(2000, function () {
+                    alert("Callback Mesajını ver");
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

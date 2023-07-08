@@ -162,3 +162,23 @@ Sayfa yüklenmeden önce yazılacak olan kod (head taglarının içerisinde olma
             //});
 
 
+            ///CALLBACK, STOP, ANIMATION
+
+             <h2>Jquery Callback, stop, animation</h2>
+             <button type="button" id="stop" class="btn btn-danger">Stop</button>
+             <div id="divClick">Click</div>
+             <div id="panel">Hello panel jquery</div>
+
+            $(function () {
+                $("#divClick").click(function () {
+                    $("#panel").slideDown(4000);
+                });
+                $("#stop").click(function () {
+                    $("#panel").stop();
+                });
+            });
+
+
+
+
+
