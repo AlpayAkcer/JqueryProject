@@ -1,0 +1,2 @@
+﻿<h2>AJAX Başlığı Request isteği</h2>
+<p id="valueID">Ajax sayfa response olmadan sunucuya gitmeden veriyi çekiyor</p>

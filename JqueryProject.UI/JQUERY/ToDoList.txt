@@ -178,6 +178,38 @@ Sayfa yüklenmeden önce yazılacak olan kod (head taglarının içerisinde olma
                 });
             });
 
+            ///AJAX
+            Load Methodu
+            - Load() basit, ancak güçlü bir ajax methodudur. Sunucudan veri yükler ve döndürülen verileri seçilen elemente yerleştirir
+
+            $(selector).load(URL,data, callback);
+            Gerekli URL Parametresi
+
+            responseTxt - eğer çağrı başarılı olursa sonuçtaki içeriğiiçerir.
+            statusTxt - aramanın durumunu içerir
+            xhr- XMLHttpRequest nesnesini içerir
+
+            <p id="request"></p>
+            $(function () {
+                $("button").click(function () {
+                    $("#div").load("demo.txt", "#pid"); //#pid yazdığım yerde demo txt dosyasının içerisindeki id degeridir. Eklerseniz size çağırdığınızda, o veriyi içeri aktarır.
+                });               
+            });
+
+            $(function () {
+            $("button").click(function () {
+                $("div").load("demo.txt", function (responseTxt, statusTxt, xhr) {
+                    if (statusTxt = "success") {
+                        alert("İşlem Başarılı");
+                    }
+                    else if (statusTxt = "error") {
+                        alert("Hata:" + xhr.status + ":" + xhr.statusText);
+                    }
+                });
+            });
+        });
+
+
 
 
 
